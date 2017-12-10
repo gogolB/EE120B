@@ -1,0 +1,38 @@
+b00000000
+wait 100 ms
+b00000001
+wait 100 ms
+b00000011
+wait 100 ms
+b00000010
+wait 100 ms
+b00000000
+wait 1 s
+
+0xFF
+wait 50 ms
+0x00
+wait 50 ms
+
+b00000010
+wait 100 ms
+b00000011
+wait 100 ms
+b00000001
+wait 100 ms
+b00000000
+wait 1 s
+
+0xFF
+wait 50 ms
+0x00
+wait 50 ms
+
+b00000011
+wait 100 ms
+b00000010
+wait 100 ms
+b00000001
+wait 100 ms
+b00000000
+generatetd

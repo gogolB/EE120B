@@ -1,0 +1,50 @@
+b00000000
+wait 100 ms
+assert 0
+b00000010
+wait 100 ms
+assert 0
+b00000011
+wait 100 ms
+assert 1
+wait 100 ms
+assert 1
+b00000010
+wait 100 ms
+assert 1
+b00000011
+wait 100 ms
+assert 2
+b00000011
+wait 100 ms
+assert 2
+b00000010
+wait 100 ms
+b00000011
+wait 100 ms
+assert 3
+b00000000
+wait 100 ms
+assert 3
+b00000001
+wait 100 ms
+assert 3
+b00000100
+wait 100 ms
+assert 0
+b00000101
+wait 100 ms
+assert 0
+b00000001
+wait 100 ms
+assert 0
+b00000011
+wait 100 ms
+assert 0
+b00000010
+wait 100 ms
+assert 0
+b00000011
+wait 100 ms
+assert 1
+generatetd

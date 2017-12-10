@@ -1,0 +1,14 @@
+0x03
+wait 1 s
+assert 2
+b00000010
+wait 1 s
+assert 1
+b00110101
+wait 1 s
+assert 2
+0xFF
+wait 1 s
+assert 8
+wait 1 s
+generatetd

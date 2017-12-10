@@ -1,0 +1,214 @@
+$date
+	08/10/17 18:02:18
+$end
+$version
+	RIMS 2.7
+$end
+$timescale
+	1 ms
+$end
+$scope module RIMS $end
+$var wire 1 *TMR TIMER_ISR $end
+$var wire 1 *A0 A0 $end
+$var wire 1 *A1 A1 $end
+$var wire 1 *A2 A2 $end
+$var wire 1 *A3 A3 $end
+$var wire 1 *A4 A4 $end
+$var wire 1 *A5 A5 $end
+$var wire 1 *A6 A6 $end
+$var wire 1 *A7 A7 $end
+$var wire 1 *B0 B0 $end
+$var wire 1 *B1 B1 $end
+$var wire 1 *B2 B2 $end
+$var wire 1 *B3 B3 $end
+$var wire 1 *B4 B4 $end
+$var wire 1 *B5 B5 $end
+$var wire 1 *B6 B6 $end
+$var wire 1 *B7 B7 $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+b0 *TMR
+b0 *A0
+b0 *A1
+b0 *A2
+b0 *A3
+b0 *A4
+b0 *A5
+b0 *A6
+b0 *A7
+b0 *B0
+b0 *B1
+b0 *B2
+b0 *B3
+b0 *B4
+b0 *B5
+b0 *B6
+b0 *B7
+$end
+#150
+b1 *A1
+#150
+b1 *A1
+#250
+b1 *A0
+#250
+b1 *A0
+#255
+b1 *B0
+#450
+b0 *A0
+#450
+b0 *A0
+#550
+b1 *A0
+#550
+b1 *A0
+#553
+b0 *B0
+#553
+b1 *B1
+#800
+b0 *A0
+#800
+b0 *A0
+#900
+b1 *A0
+#900
+b1 *A0
+#904
+b1 *B0
+#1000
+b0 *A0
+#1000
+b0 *A1
+#1000
+b0 *A0
+#1000
+b0 *A1
+#1100
+b1 *A0
+#1100
+b1 *A0
+#1200
+b0 *A0
+#1200
+b1 *A2
+#1200
+b0 *A0
+#1200
+b1 *A2
+#1204
+b0 *B0
+#1204
+b0 *B1
+#1350
+b1 *A0
+#1350
+b1 *A0
+#1450
+b0 *A2
+#1450
+b0 *A2
+#1550
+b1 *A1
+#1550
+b1 *A1
+#1650
+b0 *A0
+#1650
+b0 *A0
+#1750
+b1 *A0
+#1750
+b1 *A0
+#1755
+b1 *B0
+#150
+b1 *A1
+#150
+b1 *A1
+#250
+b1 *A0
+#250
+b1 *A0
+#1276
+bOutput pins should never be read *Error
+#255
+b1 *B0
+#450
+b0 *A0
+#450
+b0 *A0
+#550
+b1 *A0
+#550
+b1 *A0
+#2767
+bOutput pins should never be read *Error
+#553
+b0 *B0
+#553
+b1 *B1
+#800
+b0 *A0
+#800
+b0 *A0
+#900
+b1 *A0
+#900
+b1 *A0
+#4519
+bOutput pins should never be read *Error
+#904
+b1 *B0
+#1000
+b0 *A0
+#1000
+b0 *A1
+#1000
+b0 *A0
+#1000
+b0 *A1
+#1100
+b1 *A0
+#1100
+b1 *A0
+#1200
+b0 *A0
+#1200
+b1 *A2
+#1200
+b0 *A0
+#1200
+b1 *A2
+#1204
+b0 *B0
+#1204
+b0 *B1
+#1350
+b1 *A0
+#1350
+b1 *A0
+#1450
+b0 *A2
+#1450
+b0 *A2
+#1550
+b1 *A1
+#1550
+b1 *A1
+#1650
+b0 *A0
+#1650
+b0 *A0
+#1750
+b1 *A0
+#1750
+b1 *A0
+#8774
+bOutput pins should never be read *Error
+#1755
+b1 *B0

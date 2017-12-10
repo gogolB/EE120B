@@ -1,0 +1,355 @@
+
+sbhat006_lab3_part4.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000004  00800100  000001e0  00000274  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000001e0  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000005  00800104  00800104  00000278  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000278  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000002a8  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000028  00000000  00000000  000002e8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   000008fc  00000000  00000000  00000310  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 000007f0  00000000  00000000  00000c0c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   0000031b  00000000  00000000  000013fc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000034  00000000  00000000  00001718  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000484  00000000  00000000  0000174c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000018  00000000  00000000  00001bd0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	42 c0       	rjmp	.+132    	; 0xc6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e4       	ldi	r29, 0x40	; 64
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e0 ee       	ldi	r30, 0xE0	; 224
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a4 30       	cpi	r26, 0x04	; 4
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	a4 e0       	ldi	r26, 0x04	; 4
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a9 30       	cpi	r26, 0x09	; 9
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	7a d0       	rcall	.+244    	; 0x1b8 <main>
+  c4:	8b c0       	rjmp	.+278    	; 0x1dc <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <SM_Tick>:
+unsigned char B = 0x00;
+
+void SM_Tick()
+{
+	// Transition
+	switch(DI_SM_STATE)
+  c8:	80 91 08 01 	lds	r24, 0x0108	; 0x800108 <DI_SM_STATE>
+  cc:	82 30       	cpi	r24, 0x02	; 2
+  ce:	a1 f1       	breq	.+104    	; 0x138 <SM_Tick+0x70>
+  d0:	28 f4       	brcc	.+10     	; 0xdc <SM_Tick+0x14>
+  d2:	88 23       	and	r24, r24
+  d4:	41 f0       	breq	.+16     	; 0xe6 <SM_Tick+0x1e>
+  d6:	81 30       	cpi	r24, 0x01	; 1
+  d8:	19 f1       	breq	.+70     	; 0x120 <SM_Tick+0x58>
+  da:	4d c0       	rjmp	.+154    	; 0x176 <SM_Tick+0xae>
+  dc:	83 30       	cpi	r24, 0x03	; 3
+  de:	e1 f0       	breq	.+56     	; 0x118 <SM_Tick+0x50>
+  e0:	84 30       	cpi	r24, 0x04	; 4
+  e2:	b1 f0       	breq	.+44     	; 0x110 <SM_Tick+0x48>
+  e4:	48 c0       	rjmp	.+144    	; 0x176 <SM_Tick+0xae>
+	{
+		case DR_SM_WAIT_FOR_INPUT:
+			PA = (A & 0x07);
+  e6:	80 91 06 01 	lds	r24, 0x0106	; 0x800106 <A>
+  ea:	98 2f       	mov	r25, r24
+  ec:	97 70       	andi	r25, 0x07	; 7
+  ee:	90 93 05 01 	sts	0x0105, r25	; 0x800105 <PA>
+			if((A & 0x80) == 0x80)
+  f2:	88 23       	and	r24, r24
+  f4:	24 f4       	brge	.+8      	; 0xfe <SM_Tick+0x36>
+			{
+				DI_SM_STATE = DR_SM_LOCK;
+  f6:	84 e0       	ldi	r24, 0x04	; 4
+  f8:	80 93 08 01 	sts	0x0108, r24	; 0x800108 <DI_SM_STATE>
+  fc:	43 c0       	rjmp	.+134    	; 0x184 <SM_Tick+0xbc>
+			}
+			else if((PA & 0x01) == 0x01 || (PA & 0x02) == 0x02 || (PA & 0x04) == 0x04)
+  fe:	99 23       	and	r25, r25
+ 100:	21 f0       	breq	.+8      	; 0x10a <SM_Tick+0x42>
+			{
+				DI_SM_STATE = DR_SM_PROCESS_INPUT;
+ 102:	81 e0       	ldi	r24, 0x01	; 1
+ 104:	80 93 08 01 	sts	0x0108, r24	; 0x800108 <DI_SM_STATE>
+ 108:	44 c0       	rjmp	.+136    	; 0x192 <SM_Tick+0xca>
+			}
+			else
+			{
+				DI_SM_STATE = DR_SM_WAIT_FOR_INPUT;
+ 10a:	10 92 08 01 	sts	0x0108, r1	; 0x800108 <DI_SM_STATE>
+ 10e:	08 95       	ret
+			}
+		break;
+		
+		case DR_SM_LOCK:
+			DI_SM_STATE = DR_SM_WAIT_FOR_INPUT_FALL;
+ 110:	82 e0       	ldi	r24, 0x02	; 2
+ 112:	80 93 08 01 	sts	0x0108, r24	; 0x800108 <DI_SM_STATE>
+		break;
+ 116:	08 95       	ret
+		
+		case DR_SM_UNLOCK:
+			DI_SM_STATE = DR_SM_WAIT_FOR_INPUT_FALL;
+ 118:	82 e0       	ldi	r24, 0x02	; 2
+ 11a:	80 93 08 01 	sts	0x0108, r24	; 0x800108 <DI_SM_STATE>
+		break;
+ 11e:	08 95       	ret
+		
+		case DR_SM_PROCESS_INPUT:
+			if((A & 0x80) == 0x80)
+ 120:	80 91 06 01 	lds	r24, 0x0106	; 0x800106 <A>
+ 124:	88 23       	and	r24, r24
+ 126:	24 f4       	brge	.+8      	; 0x130 <SM_Tick+0x68>
+			{
+				DI_SM_STATE = DR_SM_LOCK;
+ 128:	84 e0       	ldi	r24, 0x04	; 4
+ 12a:	80 93 08 01 	sts	0x0108, r24	; 0x800108 <DI_SM_STATE>
+				break;
+ 12e:	2a c0       	rjmp	.+84     	; 0x184 <SM_Tick+0xbc>
+			}
+			DI_SM_STATE = DR_SM_WAIT_FOR_INPUT_FALL;
+ 130:	82 e0       	ldi	r24, 0x02	; 2
+ 132:	80 93 08 01 	sts	0x0108, r24	; 0x800108 <DI_SM_STATE>
+		break;
+ 136:	08 95       	ret
+		
+		case DR_SM_WAIT_FOR_INPUT_FALL:
+			if(A == 0x00)
+ 138:	80 91 06 01 	lds	r24, 0x0106	; 0x800106 <A>
+ 13c:	81 11       	cpse	r24, r1
+ 13e:	3b c0       	rjmp	.+118    	; 0x1b6 <SM_Tick+0xee>
+			{
+				if(next == maxLength && B == 0x00)
+ 140:	90 91 07 01 	lds	r25, 0x0107	; 0x800107 <next>
+ 144:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__data_start>
+ 148:	98 13       	cpse	r25, r24
+ 14a:	12 c0       	rjmp	.+36     	; 0x170 <SM_Tick+0xa8>
+ 14c:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <__data_end>
+ 150:	81 11       	cpse	r24, r1
+ 152:	06 c0       	rjmp	.+12     	; 0x160 <SM_Tick+0x98>
+				{		// Correct and Door is locked.
+					DI_SM_STATE = DR_SM_UNLOCK;
+ 154:	83 e0       	ldi	r24, 0x03	; 3
+ 156:	80 93 08 01 	sts	0x0108, r24	; 0x800108 <DI_SM_STATE>
+					next = 0;
+ 15a:	10 92 07 01 	sts	0x0107, r1	; 0x800107 <next>
+ 15e:	15 c0       	rjmp	.+42     	; 0x18a <SM_Tick+0xc2>
+				}
+				else if(next == maxLength && B == 0x01)	
+ 160:	81 30       	cpi	r24, 0x01	; 1
+ 162:	31 f4       	brne	.+12     	; 0x170 <SM_Tick+0xa8>
+				{	// Correct and Door is unlocked.
+					DI_SM_STATE = DR_SM_LOCK;
+ 164:	84 e0       	ldi	r24, 0x04	; 4
+ 166:	80 93 08 01 	sts	0x0108, r24	; 0x800108 <DI_SM_STATE>
+					next = 0;
+ 16a:	10 92 07 01 	sts	0x0107, r1	; 0x800107 <next>
+ 16e:	0a c0       	rjmp	.+20     	; 0x184 <SM_Tick+0xbc>
+				}
+				else
+					DI_SM_STATE = DR_SM_WAIT_FOR_INPUT;
+ 170:	10 92 08 01 	sts	0x0108, r1	; 0x800108 <DI_SM_STATE>
+ 174:	08 95       	ret
+		break;
+			
+	}
+	
+	// State Action tree
+	switch(DI_SM_STATE)
+ 176:	83 30       	cpi	r24, 0x03	; 3
+ 178:	41 f0       	breq	.+16     	; 0x18a <SM_Tick+0xc2>
+ 17a:	84 30       	cpi	r24, 0x04	; 4
+ 17c:	19 f0       	breq	.+6      	; 0x184 <SM_Tick+0xbc>
+ 17e:	81 30       	cpi	r24, 0x01	; 1
+ 180:	d1 f4       	brne	.+52     	; 0x1b6 <SM_Tick+0xee>
+ 182:	07 c0       	rjmp	.+14     	; 0x192 <SM_Tick+0xca>
+	{
+		case DR_SM_LOCK:
+			B = 0x00;
+ 184:	10 92 04 01 	sts	0x0104, r1	; 0x800104 <__data_end>
+		break;
+ 188:	08 95       	ret
+		
+		case DR_SM_UNLOCK:
+			B = 0x01;
+ 18a:	81 e0       	ldi	r24, 0x01	; 1
+ 18c:	80 93 04 01 	sts	0x0104, r24	; 0x800104 <__data_end>
+		break;
+ 190:	08 95       	ret
+		
+		case DR_SM_PROCESS_INPUT:
+			if(Sequence[next] == (A & 0x07))
+ 192:	90 91 07 01 	lds	r25, 0x0107	; 0x800107 <next>
+ 196:	80 91 06 01 	lds	r24, 0x0106	; 0x800106 <A>
+ 19a:	87 70       	andi	r24, 0x07	; 7
+ 19c:	e9 2f       	mov	r30, r25
+ 19e:	f0 e0       	ldi	r31, 0x00	; 0
+ 1a0:	ef 5f       	subi	r30, 0xFF	; 255
+ 1a2:	fe 4f       	sbci	r31, 0xFE	; 254
+ 1a4:	20 81       	ld	r18, Z
+ 1a6:	82 13       	cpse	r24, r18
+ 1a8:	04 c0       	rjmp	.+8      	; 0x1b2 <SM_Tick+0xea>
+				next++;
+ 1aa:	9f 5f       	subi	r25, 0xFF	; 255
+ 1ac:	90 93 07 01 	sts	0x0107, r25	; 0x800107 <next>
+ 1b0:	08 95       	ret
+			else
+				next = 0;
+ 1b2:	10 92 07 01 	sts	0x0107, r1	; 0x800107 <next>
+ 1b6:	08 95       	ret
+
+000001b8 <main>:
+	
+}
+
+int main(void)
+{
+	DDRA = 0x00; PORTA = 0x00;
+ 1b8:	11 b8       	out	0x01, r1	; 1
+ 1ba:	12 b8       	out	0x02, r1	; 2
+	DDRB = 0xFF; PORTB = 0x00;
+ 1bc:	8f ef       	ldi	r24, 0xFF	; 255
+ 1be:	84 b9       	out	0x04, r24	; 4
+ 1c0:	15 b8       	out	0x05, r1	; 5
+	
+	// INIT
+	DI_SM_STATE = DR_SM_WAIT_FOR_INPUT;
+ 1c2:	10 92 08 01 	sts	0x0108, r1	; 0x800108 <DI_SM_STATE>
+	B = 0x00;
+ 1c6:	10 92 04 01 	sts	0x0104, r1	; 0x800104 <__data_end>
+    /* Replace with your application code */
+    while (1) 
+    {
+		A = PINA & 0x87;
+ 1ca:	80 b1       	in	r24, 0x00	; 0
+ 1cc:	87 78       	andi	r24, 0x87	; 135
+ 1ce:	80 93 06 01 	sts	0x0106, r24	; 0x800106 <A>
+		SM_Tick();
+		PORTB = B;
+ 1d2:	7a df       	rcall	.-268    	; 0xc8 <SM_Tick>
+ 1d4:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <__data_end>
+ 1d8:	85 b9       	out	0x05, r24	; 5
+ 1da:	f7 cf       	rjmp	.-18     	; 0x1ca <main+0x12>
+
+000001dc <_exit>:
+ 1dc:	f8 94       	cli
+
+000001de <__stop_program>:
+ 1de:	ff cf       	rjmp	.-2      	; 0x1de <__stop_program>

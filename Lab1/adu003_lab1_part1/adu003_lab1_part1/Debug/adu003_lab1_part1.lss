@@ -1,0 +1,211 @@
+
+adu003_lab1_part1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00000118  0000018c  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000118  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  0000018c  2**0
+                  CONTENTS, READONLY
+  3 .debug_aranges 00000020  00000000  00000000  000001bc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   000000b2  00000000  00000000  000001dc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 00000062  00000000  00000000  0000028e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   0000010b  00000000  00000000  000002f0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  00000034  00000000  00000000  000003fc  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    0000015c  00000000  00000000  00000430  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    00000048  00000000  00000000  0000058c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000010  00000000  00000000  000005d4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e4       	ldi	r29, 0x40	; 64
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	02 d0       	rcall	.+4      	; 0x9e <main>
+  9a:	3c c0       	rjmp	.+120    	; 0x114 <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <main>:
+ */ 
+
+
+#include <avr/io.h>
+int main(void)
+{
+  9e:	cf 93       	push	r28
+  a0:	df 93       	push	r29
+  a2:	00 d0       	rcall	.+0      	; 0xa4 <main+0x6>
+  a4:	1f 92       	push	r1
+  a6:	cd b7       	in	r28, 0x3d	; 61
+  a8:	de b7       	in	r29, 0x3e	; 62
+	DDRA = 0x00; PORTA = 0xFF; // Configure port A's 8 pins as inputs
+  aa:	81 e2       	ldi	r24, 0x21	; 33
+  ac:	90 e0       	ldi	r25, 0x00	; 0
+  ae:	fc 01       	movw	r30, r24
+  b0:	10 82       	st	Z, r1
+  b2:	82 e2       	ldi	r24, 0x22	; 34
+  b4:	90 e0       	ldi	r25, 0x00	; 0
+  b6:	2f ef       	ldi	r18, 0xFF	; 255
+  b8:	fc 01       	movw	r30, r24
+  ba:	20 83       	st	Z, r18
+	DDRB = 0xFF; PORTB = 0x00; // Configure port B's 8 pins as outputs,
+  bc:	84 e2       	ldi	r24, 0x24	; 36
+  be:	90 e0       	ldi	r25, 0x00	; 0
+  c0:	2f ef       	ldi	r18, 0xFF	; 255
+  c2:	fc 01       	movw	r30, r24
+  c4:	20 83       	st	Z, r18
+  c6:	85 e2       	ldi	r24, 0x25	; 37
+  c8:	90 e0       	ldi	r25, 0x00	; 0
+  ca:	fc 01       	movw	r30, r24
+  cc:	10 82       	st	Z, r1
+	// initialize to 0s
+	unsigned char door = 0x00; // Temporary variable to hold the value of B
+  ce:	1a 82       	std	Y+2, r1	; 0x02
+	unsigned char light = 0x00; // Temporary variable to hold the value of A
+  d0:	1b 82       	std	Y+3, r1	; 0x03
+	unsigned char tmpB = 0x00; // Temporary variable to hold the value of A
+  d2:	19 82       	std	Y+1, r1	; 0x01
+	while(1)
+	{
+		// 1) Read input
+		door = PINA & 0x01;
+  d4:	80 e2       	ldi	r24, 0x20	; 32
+  d6:	90 e0       	ldi	r25, 0x00	; 0
+  d8:	fc 01       	movw	r30, r24
+  da:	80 81       	ld	r24, Z
+  dc:	81 70       	andi	r24, 0x01	; 1
+  de:	8a 83       	std	Y+2, r24	; 0x02
+		light = PINA & 0x02;
+  e0:	80 e2       	ldi	r24, 0x20	; 32
+  e2:	90 e0       	ldi	r25, 0x00	; 0
+  e4:	fc 01       	movw	r30, r24
+  e6:	80 81       	ld	r24, Z
+  e8:	82 70       	andi	r24, 0x02	; 2
+  ea:	8b 83       	std	Y+3, r24	; 0x03
+		// 2) Perform computation
+		// if PA0 is 1, set PB1PB0=01, else =10
+		if (door == 0x01 && light != 0x02) { // True if PA0 is 1
+  ec:	8a 81       	ldd	r24, Y+2	; 0x02
+  ee:	81 30       	cpi	r24, 0x01	; 1
+  f0:	41 f4       	brne	.+16     	; 0x102 <main+0x64>
+  f2:	8b 81       	ldd	r24, Y+3	; 0x03
+  f4:	82 30       	cpi	r24, 0x02	; 2
+  f6:	29 f0       	breq	.+10     	; 0x102 <main+0x64>
+			tmpB = (tmpB & 0xFC) | 0x01; // Sets tmpB to bbbbbb01
+  f8:	89 81       	ldd	r24, Y+1	; 0x01
+  fa:	8c 7f       	andi	r24, 0xFC	; 252
+  fc:	81 60       	ori	r24, 0x01	; 1
+  fe:	89 83       	std	Y+1, r24	; 0x01
+ 100:	03 c0       	rjmp	.+6      	; 0x108 <main+0x6a>
+			// (clear rightmost 2 bits, then set to 01)
+		}
+		else {
+			tmpB = (tmpB & 0xFC) | 0x00; // Sets tmpB to bbbbbb10
+ 102:	89 81       	ldd	r24, Y+1	; 0x01
+ 104:	8c 7f       	andi	r24, 0xFC	; 252
+ 106:	89 83       	std	Y+1, r24	; 0x01
+			// (clear rightmost 2 bits, then set to 10)
+		}
+		// 3) Write output
+		PORTB = tmpB;
+ 108:	85 e2       	ldi	r24, 0x25	; 37
+ 10a:	90 e0       	ldi	r25, 0x00	; 0
+ 10c:	29 81       	ldd	r18, Y+1	; 0x01
+ 10e:	fc 01       	movw	r30, r24
+ 110:	20 83       	st	Z, r18
+	}
+ 112:	e0 cf       	rjmp	.-64     	; 0xd4 <main+0x36>
+
+00000114 <_exit>:
+ 114:	f8 94       	cli
+
+00000116 <__stop_program>:
+ 116:	ff cf       	rjmp	.-2      	; 0x116 <__stop_program>

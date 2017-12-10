@@ -1,0 +1,13 @@
+b00000000
+wait 0.5 s
+assert 0xF0
+b11000000
+wait 0.5 s
+assert 0xF3
+b11111111
+wait 0.5 s
+assert 0xFC
+b11000111
+wait 0.5 s
+assert 0xF7
+generatetd
